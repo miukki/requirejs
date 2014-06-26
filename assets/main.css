@@ -1,0 +1,20 @@
+/*main splacing*/
+/*main color*/
+.p-md {
+  padding: 20px;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pt-md {
+  padding-top: 20px;
+}
+.mb-md {
+  margin-bottom: 20px;
+}
+.ml-sm {
+  margin-left: 5px;
+}
+body {
+  background: #efefef;
+}
