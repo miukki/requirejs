@@ -1,18 +1,19 @@
 {
   "name": "requirejs",
   "version": "0.0.0",
+  "homepage": "https://github.com/miukki/requirejs",
   "authors": [
-    "miukki macbook air <miukki@gmail.com>"
-  ],
-  "description": "how to use require.js",
-  "main": "index.html",
-  "keywords": [
-    "require.js"
+    "Anja <miukki@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-  ]
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
 }

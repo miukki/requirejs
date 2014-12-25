@@ -1,7 +1,8 @@
-define(['Views/ListView'], function(ListView){
+define(['jquery', 'Views/ListView'], function($, ListView){
 
     function start(){
-        var users = JSON.parse(localStorage.users);
+        $('#add').html('');
+        var users = localStorage.users ? JSON.parse(localStorage.users) : [];
         ListView.render({users:users});
     }
 

@@ -1,21 +1,18 @@
 requirejs.config({
 //enforceDefine: true,
   paths: {
-    addController: [
-        'Controllers/addController'
-    ]
+    addController: 'Controllers/addController',
+    listController: 'Controllers/ListController',
+    jquery: '../bower_components/jquery/dist/jquery'
+
   }
 });
 
 
-require(['Models/User', 'Controllers/ListController', 'addController'], function(User, ListController, addController){
+require(['Router'], function(router){
 
-  ListController.start();
-  addController.start();
+ //addController.start();
+ //listController.start();
+ router.startRouting();
 
-}, function(err) {
-
-  var failedId = err.requireModules && err.requireModules[0];
-
-  //for error handling
-});
+});	
