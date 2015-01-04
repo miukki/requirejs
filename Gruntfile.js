@@ -3,14 +3,17 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
 	//register my own task
-	/*
 	grunt.registerMultiTask('title', 'description', function() {
-	    node.js might be
+      //node.js might be
       grunt.util.async.forEach(this.filesSrc, function(file, next) {console.log(file)}, this.async());
-	});
-	*/
+  });
+
 
   grunt.initConfig({
+
+    title: {
+      filesSrc: './assets'
+    },
 
     less: {
         compile: {
